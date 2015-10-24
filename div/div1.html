@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <style type="text/css">
+        body {
+            padding: 0;
+            margin: 0;
+            font-size: 75%;
+            line-height: 140%;
+            font-family:Arial, Helvetica, sans-serif;
+        }
+        body,html{height: 100%; }
+        a{color: #333;}
+        a:hover{color: green;}
+        #outer {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+            width: 100%;
+            background:ivory;
+        }
+
+        #outer[id] {display: table; position: static;}
+        /* 居中代码*/
+        #middle {position: absolute; top: 50%;text-align:center;} /* for explorer only*/
+        #middle[id] {display: table-cell; vertical-align: middle; position: static;}
+    </style>
+</head>
+<body>
+<div id="outer">
+    <div id="middle">
+        <div id="inner" class="greenBorder">
+            <p><a href="javascript:toggleContent('inner',1)">默认长度</a>  <a href="javascript:toggleContent('inner',2)">加长页面</a></p>
+            <p> 1.打开illustrator,新建一个文件，画个矩形，比你要导入的图片大一些，白色填充。 <br />
+                2.选中矩形，菜单：Effect > Distort & Transform > Zig Zag，设置如下图。 <br />
+                3.菜单：Effect > Stylize > Drop Shadow，设置如下图。 <br />
+                1.打开illustrator,新建一个文件，画个矩形，比你要导入的图片大一些，白色填充。 <br />
+                2.选中矩形，菜单：Effect > Distort & Transform > Zig Zag，设置如下图。 <br />
+                3.菜单：Effect > Stylize > Drop Shadow，设置如下图。</p>
+            <address style="text-align:center; padding: .5em; clear: left;">
+                Design by <a href="http://www.forest53.com">Forestgan</a> 本演示采用<a href="http://www.creativecommons.cn/">创作共用授权</a>--署名和非商业用途。
+            </address>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
